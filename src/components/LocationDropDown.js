@@ -12,8 +12,7 @@ export default class LocationDropDown extends Component {
         console.log(locationName);
         this.setState({
             label: locationName
-        })
-        
+        });
     }
 
     render() {
