@@ -10,9 +10,14 @@ export default class LocationDropDown extends Component {
         console.log(e.target);
         let locationName = e.target.getAttribute('data-name');
         console.log(locationName);
+
         this.setState({
             label: locationName
         });
+
+        if (this.props.selectedCallback) {
+            this.props.selectedCallback(locationName);
+        }
     }
 
     render() {
