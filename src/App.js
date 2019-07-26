@@ -6,13 +6,13 @@ import LocationDropDown from './components/LocationDropDown'
 function App() {
 
   let provinces = [
-    {name: 'Bangkok'},
-    {name: 'Chonburi'},
+    {id: 1, name: 'Bangkok'},
+    {id: 2, name: 'Chonburi'},
   ]
 
   return (
     <div>
-      <LocationDropDown locations={provinces}></LocationDropDown>
+      <LocationDropDown defaultLabel="จังหวัด" locations={provinces}></LocationDropDown>
     </div>
   );
 }
